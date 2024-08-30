@@ -2,7 +2,7 @@
 
 ### Overview
 
-This project consists of a Python-based model fine-tuning script, a VS Code extension for code completion, and a Flask API to handle code generation requests. The primary goal is to provide a code completion feature within VS Code, utilizing a fine-tuned machine learning model.
+The Code Completion Co-Pilot project integrates a VS Code extension with a Flask backend to provide intelligent code completion capabilities. By utilizing a fine-tuned transformer model, the system enhances productivity and coding efficiency. The project demonstrates a robust implementation of both frontend and backend components, with careful handling of various input cases to ensure a seamless user experience.
 
 ### Key Components
 
