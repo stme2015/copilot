@@ -17,14 +17,13 @@ This project consists of a Python-based model fine-tuning script, a VS Code exte
 
 1. **Clone the Repository**:
    
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-   cd copilot_plantoai
+   git clone https://github.com/stme2015/copilot.git
 
-2. **Install Dependencies:** Ensure you have Python and pip installed. Then, install the required packages:**
+3. **Install Dependencies:** Ensure you have Python and pip installed. Then, install the required packages.
 
    pip install flask transformers
 
-3. **Run the Flask API:** Make sure you have your model and tokenizer saved in the appropriate directories.**
+4. **Run the Flask API:** Make sure you have your model and tokenizer saved in the appropriate directories.
 
    python app.py
    The API will be accessible at http://localhost:5000.
@@ -32,7 +31,7 @@ This project consists of a Python-based model fine-tuning script, a VS Code exte
 ### 2. VS Code Extension
 
    Prerequisites: Ensure you have Node.js and npm installed.
-   Install Dependencies: Navigate to the VS Code extension directory and install the required npm packages:
+   Install Dependencies: Navigate to the VS Code extension directory and install the required npm packages.
 
    cd path/to/extension
    npm install
