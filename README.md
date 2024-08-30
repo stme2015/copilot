@@ -1,65 +1,55 @@
-# codegen-pilot README
+# Code Completion Extension and API
 
-This is the README for your extension "codegen-pilot". After writing up a brief description, we recommend including the following sections.
+## Overview
 
-## Features
+This project consists of a Python-based model fine-tuning script, a VS Code extension for code completion, and a Flask API to handle code generation requests. The primary goal is to provide a code completion feature within VS Code, utilizing a fine-tuned machine learning model.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Key Components
 
-For example if there is an image subfolder under your extension project workspace:
+1. **Flask API**: A backend service that generates code completions using a fine-tuned model.
+2. **VS Code Extension**: An extension that integrates with the Flask API to provide code completion functionality directly within the VS Code editor.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Getting Started
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### 1. Flask API
 
-## Requirements
+#### Setup
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. **Clone the Repository**:
+   
+   git clone https://github.com/stme2015/copilot.git
+   cd copilot
 
-## Extension Settings
+2. **Install Dependencies**: Ensure you have Python and pip installed. Then, install the required packages:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+  pip install flask transformers
 
-For example:
+3. **Run the Flask API**: Make sure you have your model and tokenizer saved in the appropriate directories.
 
-This extension contributes the following settings:
+  python app.py
+  The API will be accessible at http://localhost:5000.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+### 2. VS Code Extension
 
-## Known Issues
+**Setup**
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1. Prerequisites: Ensure you have Node.js and npm installed.
 
-## Release Notes
+2. Install Dependencies: Navigate to the VS Code extension directory and install the required npm packages:
 
-Users appreciate release notes as you update your extension.
+  cd path/to/extension
+  npm install
 
-### 1.0.0
+3. Run the Extension: You can run and test the extension using VS Code:
 
-Initial release of ...
+  Open VS Code.
+  Go to the extension development host by pressing F5.
+  Install and test the extension from there.
 
-### 1.0.1
+**Usage**
 
-Fixed issue #.
+Using the VS Code Extension:
 
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Type a partial code or prompt in the VS Code editor.
+Use the command palette (Ctrl+Shift+P or Cmd+Shift+P) to select Complete Code or use the keyboard shortcut Ctrl+Alt+C.
+The extension will interact with the Flask API to provide code completions.
