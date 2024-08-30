@@ -1,6 +1,6 @@
-# Code Completion Extension and API
+### Code Completion Extension and API
 
-## Overview
+### Overview
 
 This project consists of a Python-based model fine-tuning script, a VS Code extension for code completion, and a Flask API to handle code generation requests. The primary goal is to provide a code completion feature within VS Code, utilizing a fine-tuned machine learning model.
 
@@ -18,13 +18,14 @@ This project consists of a Python-based model fine-tuning script, a VS Code exte
 1. **Clone the Repository**:
    
    git clone https://github.com/stme2015/copilot.git
+
    cd copilot
 
-2. **Install Dependencies**: Ensure you have Python and pip installed. Then, install the required packages:
+3. **Install Dependencies**: Ensure you have Python and pip installed. Then, install the required packages:
 
       pip install flask transformers
 
-3. **Run the Flask API**: Make sure you have your model and tokenizer saved in the appropriate directories.
+4. **Run the Flask API**: Make sure you have your model and tokenizer saved in the appropriate directories.
 
      python app.py
      The API will be accessible at http://localhost:5000.
